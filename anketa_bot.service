@@ -1,14 +1,12 @@
 [Unit]
-Description=anketa_bot
+Description=2-anketa_bot
 After=network.target
 
 [Service]
 User=root
-WorkingDirectory=/root/apps/bots/anketa_bot
-ExecStart=/root/apps/bots/anketa_bot/venv/bin/python /root/apps/bots/anketa_bot/main.py
+WorkingDirectory=/root/apps/bots/2-anketa_bot
+ExecStart=/root/apps/bots/2-anketa_bot/venv/bin/python /root/apps/bots/2-anketa_bot/main.py
 Restart=always
-RestartSec=3
-Environment="PYTHONUNBUFFERED=1"
 
 [Install]
 WantedBy=multi-user.target
