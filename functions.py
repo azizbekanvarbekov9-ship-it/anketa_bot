@@ -8,9 +8,9 @@ from aiogram.types import (
 from aiogram.fsm.context import FSMContext
 
 from states import AnketaState
+from config import group_id
 
-
-CHANNEL_ID =-1003130885017
+CHANNEL_ID = group_id
 
 
 

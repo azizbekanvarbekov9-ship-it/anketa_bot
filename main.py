@@ -1,7 +1,10 @@
 import asyncio
+
+
 from aiogram import Bot, Dispatcher, F
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.filters import Command
+
 
 from functions import (
     start_handler,
@@ -15,9 +18,9 @@ from functions import (
     get_tasdiq
 )
 from states import AnketaState
+from config import TOKEN
 
-
-TOKEN = "6143382079:AAF4CHF8nu1fhWxr5ej6KY1UZfNebePd7Dk"
+TOKEN = TOKEN
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
